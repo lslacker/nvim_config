@@ -16,4 +16,5 @@ require("lslacker.plugins.lsp.lspconfig")
 require("lslacker.plugins.lsp.null-ls")
 require("lslacker.plugins.nvim-dap")
 require("lslacker.plugins.nvim-dap-python")
+require("lslacker.plugins.bufferline")
 

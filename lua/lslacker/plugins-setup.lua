@@ -35,7 +35,7 @@ local plugins = {
 	"nvim-tree/nvim-tree.lua",
 
 	-- icons
-	"kyazdani42/nvim-web-devicons",
+  -- "kyazdani42/nvim-web-devicons",
 
 	-- statusline
 	"nvim-lualine/lualine.nvim",
@@ -105,6 +105,9 @@ local plugins = {
   "theHamsta/nvim-dap-virtual-text",
   "nvim-telescope/telescope-dap.nvim",
   "nvim-lua/popup.nvim",
+
+  -- bufferline
+  {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}
 }
 
 local opts = {}
