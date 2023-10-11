@@ -123,7 +123,7 @@ local config = {
 					-- Use Google Java style guidelines for formatting
 					-- To use, make sure to download the file from https://github.com/google/styleguide/blob/gh-pages/eclipse-java-google-style.xml
 					-- and place it in the ~/.local/share/eclipse directory
-					url = "/.local/share/eclipse/eclipse-java-google-style.xml",
+					url = home .. "/.local/share/eclipse/eclipse-java-google-style.xml",
 					profile = "GoogleStyle",
 				},
 			},
@@ -200,7 +200,7 @@ local config = {
 		"-Declipse.product=org.eclipse.jdt.ls.core.product",
 		"-Dlog.protocol=true",
 		"-Dlog.level=ALL",
-		"-Xmx4g",
+		"-Xmx2g",
 		"--add-modules=ALL-SYSTEM",
 		"--add-opens",
 		"java.base/java.util=ALL-UNNAMED",
@@ -209,7 +209,7 @@ local config = {
 		-- If you use lombok, download the lombok jar and place it in ~/.local/share/eclipse
 		"-javaagent:"
 			.. home
-			.. "/Workspaces/apps/jdtls/lombok.jar",
+			.. "/Workspaces/apps/lombok.jar",
 
 		-- The jar file is located where jdtls was installed. This will need to be updated
 		-- to the location where you installed jdtls
@@ -228,7 +228,7 @@ local config = {
 	init_options = {
 		bundles = {
 			home
-				.. "/Workspaces/apps/java-debug-0.45.0/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.45.0.jar",
+				.. "/Workspaces/apps/java-debug-0.49.0/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.49.0.jar",
 		},
 	},
 }
